@@ -202,14 +202,6 @@ Config.Items = { -- Items found in the ambulance shop for players with the ambul
             type = "item",
             slot = 8,
         },
-        [10] = {
-            name = "notepad",
-            price = 0,
-            amount = 1,
-            info = {},
-            type = "item",
-            slot = 9,
-        },
     }
 }
 
