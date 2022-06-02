@@ -779,6 +779,18 @@ CreateThread(function()
 end)
 
 CreateThread(function()
+    dimeBlip = AddBlipForCoord(859.49, -2364.07, 30.35)
+    SetBlipSprite(dimeBlip, 523)
+    SetBlipScale(dimeBlip, 0.6)
+    SetBlipDisplay(dimeBlip, 4)
+    SetBlipColour(dimeBlip, 50)
+    SetBlipAsShortRange(dimeBlip, true)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentSubstringPlayerName("D.I.M.E. Car Club")
+    EndTextCommandSetBlipName(dimeBlip)
+end)
+
+CreateThread(function()
     while true do
         local ped = PlayerPedId()
         local health = GetEntityHealth(ped)
