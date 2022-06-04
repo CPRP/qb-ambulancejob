@@ -51,7 +51,8 @@ function OnDeath()
                 loadAnimDict(deadAnimDict)
                 TaskPlayAnim(player, deadAnimDict, deadAnim, 1.0, 1.0, -1, 1, 0, 0, 0, 0)
             end
-            TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_died'))
+            -- TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_died'))
+            exports['ps-dispatch']:DeceasedPerson()
         end
     end
 end
@@ -195,7 +196,8 @@ CreateThread(function()
                     end
 
                     if IsControlJustPressed(0, 47) and not emsNotified then
-                        TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_down'))
+                        -- TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_down'))
+                        exports['ps-dispatch']:InjuriedPerson()
                         emsNotified = true
                     end
                 end
