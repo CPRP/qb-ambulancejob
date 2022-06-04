@@ -79,7 +79,8 @@ function SetLaststand(bool)
 
         InLaststand = true
 
-        TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_down'))
+        -- TriggerServerEvent('hospital:server:ambulanceAlert', Lang:t('info.civ_down'))
+        exports['ps-dispatch']:InjuriedPerson()
 
         CreateThread(function()
             while InLaststand do
