@@ -113,13 +113,11 @@ RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
                 OnDeath()
                 DeathTimer()
             elseif (PlayerData.metadata["inlaststand"] and not PlayerData.metadata["isdead"]) then
-                SetLaststand(true, true)
+                SetLaststand(true)
             else
                 TriggerServerEvent("hospital:server:SetDeathStatus", false)
                 TriggerServerEvent("hospital:server:SetLaststandStatus", false)
             end
-
-
             if PlayerJob.name == 'ambulance' and onDuty then
                 TriggerServerEvent("hospital:server:AddDoctor", PlayerJob.name)
             end
@@ -230,7 +228,7 @@ RegisterNetEvent('hospital:client:RevivePlayer', function()
                     TriggerServerEvent("hospital:server:RevivePlayer", playerId)
                 end, function() -- Cancel
                     StopAnimTask(PlayerPedId(), healAnimDict, "exit", 1.0)
-                    QBCore.Functions.Notify(Lang:t('error.cancled'), "error")
+                    QBCore.Functions.Notify(Lang:t('error.canceled'), "error")
                 end)
             else
                 QBCore.Functions.Notify(Lang:t('error.no_player'), "error")
