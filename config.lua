@@ -34,9 +34,12 @@ Config.AlertShowInfo = 2 -- How many injuries a player must have before being al
 
 Config.Locations = { -- Edit the various interaction points for players or create new ones
     ["checking"] = {
-	    [1] = vector3(309.09, -592.51, 43.28),
+	[1] = vector3(309.09, -592.51, 43.28),
         [2] = vector3(350.85, -588.11, 28.8),
-	    [3] = vector3(-254.54, 6331.78, 32.43), -- paleto
+	[3] = vector3(-254.54, 6331.78, 32.43), -- paleto
+	[4] = vector3(1831.27, 3675.42, 34.27), --sandy
+        [5] = vector3(-1851.6, -339.17, 49.44), --oceanhospital
+        [6] = vector3(-1854.15, -333.98, 49.45), --oceanhospital
     },
     ["duty"] = {
         [1] = vector3(310.63, -597.06, 43.28),
@@ -79,6 +82,10 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [9] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
         [10] = {coords = vector4(-247.04, 6317.95, 32.34, 134.64), taken = false, model = 2117668672},
         [11] = {coords = vector4(-255.98, 6315.67, 32.34, 313.91), taken = false, model = 2117668672},
+	---  sandy
+        [12] = {coords = vector4(1823.37, 3672.41, 35.2, 123.98), taken = false, model = 2117668672},
+        ---  oceanhospital
+        [13] = {coords = vector4(-1862.73, -334.33, 50.19, 306.19), taken = false, model = 2117668672},
     },
     ["jailbeds"] = {
         [1] = {coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672},
