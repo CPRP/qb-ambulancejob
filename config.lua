@@ -94,7 +94,9 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [4] = {coords = vector4(1771.85, 2591.85, 45.66, 91.51), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)}
+        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)},
+        [2] = {label = Lang:t('info.oc_hospital'), coords = vector4(-1861.29, -348.07, 49.39, 134.37)},
+        [3] = {label = Lang:t('info.pa_hospital'), coords = vector4(-251.43, 6329.25, 32.43, 281.55)}
     }
 }
 
