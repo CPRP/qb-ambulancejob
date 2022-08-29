@@ -991,6 +991,18 @@ CreateThread(function()
 end)
 
 CreateThread(function()
+    gruppeBlip = AddBlipForCoord(-304.91, -737.94, 33.99)
+    SetBlipSprite(gruppeBlip, 67)
+    SetBlipScale(gruppeBlip, 0.8)
+    SetBlipDisplay(gruppeBlip, 4)
+    SetBlipColour(gruppeBlip, 2)
+    SetBlipAsShortRange(gruppeBlip, true)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentSubstringPlayerName("Gruppe6 Gig")
+    EndTextCommandSetBlipName(gruppeBlip)
+end)
+
+CreateThread(function()
     while true do
         local ped = PlayerPedId()
         local health = GetEntityHealth(ped)
