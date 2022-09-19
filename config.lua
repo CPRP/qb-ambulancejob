@@ -3,7 +3,7 @@ Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target in
 Config.MinimalDoctors = 100 -- How many players with the ambulance job to prevent the hospital check-in system from being used
 Config.DocCooldown = 1 -- Cooldown between doctor calls allowed, in minutes
 Config.WipeInventoryOnRespawn = false -- Enable or disable removing all the players items when they respawn at the hospital
-Config.Helicopter = "polmav" -- Helicopter model that players with the ambulance job can use
+Config.Helicopter = "aw139" -- Helicopter model that players with the ambulance job can use
 Config.BillCost = 1000 -- Price that players are charged for using the hospital check-in system
 Config.DeathTime = 150 -- How long the timer is for players to bleed out completely and respawn at the hospital
 Config.PainkillerInterval = 60 -- Set the length of time painkillers last (per one)
@@ -38,15 +38,18 @@ Config.Locations = { -- Edit the various interaction points for players or creat
 	    [1] = vector3(309.09, -592.51, 43.28), -- PillboxTop
         [2] = vector3(350.85, -588.11, 28.8), -- PillboxBotom
 	    [3] = vector3(-254.54, 6331.78, 32.43), -- Paleto
-        [4] = vector3(-1851.6, -339.17, 49.44), -- Ocean
-        [5] = vector3(-1854.15, -333.98, 49.45), -- Ocean
-        [6] = vector3(-1865.02, -321.18, 49.46), -- Ocean
+        [4] = vector3(1674.81, 3666.17, 35.34), -- Sandy
+        [5] = vector3(1672.41, 3652.76, 35.34), -- Sandy
+        -- [4] = vector3(-1851.6, -339.17, 49.44), -- Ocean
+        -- [5] = vector3(-1854.15, -333.98, 49.45), -- Ocean
+        -- [6] = vector3(-1865.02, -321.18, 49.46), -- Ocean
     },
     ["duty"] = {
         [1] = vector3(310.63, -597.06, 43.28), -- Pillbox
         [2] = vector3(-653.73, -87.68, 38.79), -- FireHQ
         [3] = vector3(-255.66, 6330.44, 32.43), -- Paleto
-        [4] = vector3(-1832.04, -341.03, 49.47), -- Ocean
+        [4] = vector3(1670.83, 3655.24, 35.34), -- Sandy
+        -- [4] = vector3(-1832.04, -341.03, 49.47), -- Ocean
     },
     ["vehicle"] = {
         [1] = vector4(0, 0, 0, 0),
@@ -54,13 +57,15 @@ Config.Locations = { -- Edit the various interaction points for players or creat
     },
     ["helicopter"] = {
         [1] = vector4(351.58, -587.45, 74.16, 160.5), -- Pillbox Rooftop
-        [2] = vector4(-1867.1, -352.71, 58.03, 140.15), -- Ocean
+        [2] = vector4(1636.95, 3654.74, 35.34, 214.84), -- Sandy
+        -- [2] = vector4(-1867.1, -352.71, 58.03, 140.15), -- Ocean
     },
     ["armory"] = {
         [1] = vector3(306.63, -601.76, 43.28), -- Pillbox
         [2] = vector3(-623.88, -109.03, 45.5), -- FireHQ
         [3] = vector3(-255.07, 6326.67, 32.43), -- Paleto
-        [4] = vector3(-1834.8, -340.76, 49.46), -- Ocean
+        [4] = vector3(1660.81, 3660.0, 35.34), -- Sandy
+        -- [4] = vector3(-1834.8, -340.76, 49.46), -- Ocean
     },
     ["roof"] = {
         [1] = vector4(338.5, -583.85, 74.16, 245.5), -- Pillbox
@@ -72,38 +77,38 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [1] = vector3(302.06, -599.31, 43.28), -- Pillbox
         [2] = vector3(-629.2, -85.22, 45.41), -- FireHQ
         [3] = vector3(-256.2, 6327.75, 32.43), -- Paleto
-        [4] = vector3(-1814.93, -359.88, 49.46), -- Ocean
-        [5] = vector3(-1813.89, -358.39, 49.46), -- Ocean
+        [4] = vector3(1660.36, 3657.36, 35.34), -- Sandy
+        -- [4] = vector3(-1814.93, -359.88, 49.46), -- Ocean
+        -- [5] = vector3(-1813.89, -358.39, 49.46), -- Ocean
     },
     ["beds"] = {
 	-- Pillbox
-        [1] = {coords = vector4(324.26, -582.77, 44.2, 158.15), taken = false, model = 1631638868},
-        [2] = {coords = vector4(322.59, -587.32, 44.2, 336.72), taken = false, model = 1631638868},
-        [3] = {coords = vector4(319.33, -581.15, 44.2, 158.61), taken = false, model = 1631638868},
-        [4] = {coords = vector4(317.67, -585.24, 44.2, 338.29), taken = false, model = 1631638868},
-        [5] = {coords = vector4(314.47, -584.23, 44.2, 339.52), taken = false, model = 1631638868}, 
-        [6] = {coords = vector4(313.81, -579.04, 44.2, 156.64), taken = false, model = 1631638868}, 
-        [7] = {coords = vector4(311.12, -582.9, 44.2, 338.82), taken = false, model = 1631638868}, 
-        [8] = {coords = vector4(309.33, -577.3, 44.2, 158.98), taken = false, model = 1631638868},
-        [9] = {coords = vector4(307.63, -581.9, 44.2, 336.67), taken = false, model = 1631638868},
-        --- paleto
-        [10] = {coords = vector4(-252.43, 6312.25, 32.34, 313.48), taken = false, model = 2117668672},
-        [11] = {coords = vector4(-251.04, 6310.6, 33.34, 232.9), taken = false, model = 2117668672},
-        [12] = {coords = vector4(-254.36, 6313.97, 33.34, 224.96), taken = false, model = 2117668672},
-        [13] = {coords = vector4(-256.11, 6315.76, 33.34, 228.47), taken = false, model = 2117668672},
-        [14] = {coords = vector4(-252.12, 6323.05, 33.34, 43.66), taken = false, model = 2117668672},
-        [15] = {coords = vector4(-247.15, 6317.88, 33.34, 46.5), taken = false, model = 2117668672},
-        [16] = {coords = vector4(-245.29, 6316.13, 33.34, 47.66), taken = false, model = 2117668672},
-        ---  oceanhospital
-        [17] = {coords = vector4(-1875.13, -318.13, 50.19, 55.75), taken = false, model = 1570477186},
-        [18] = {coords = vector4(-1878.63, -321.96, 50.19, 236.28), taken = false, model = 1570477186},
-        [19] = {coords = vector4(-1875.26, -324.53, 50.19, 233.09), taken = false, model = 1570477186},
-        [20] = {coords = vector4(-1872.23, -326.95, 50.19, 237.17), taken = false, model = 1570477186},
-        [21] = {coords = vector4(-1868.71, -329.86, 50.19, 232.97), taken = false, model = 1570477186},
-        [22] = {coords = vector4(-1865.85, -332.06, 50.19, 238.19), taken = false, model = 1570477186},
-        [23] = {coords = vector4(-1862.85, -334.3, 50.19, 241.39), taken = false, model = 1570477186},
-        [24] = {coords = vector4(-1868.75, -323.07, 50.19, 58.8), taken = false, model = 1570477186},
-        [25] = {coords = vector4(-1871.89, -320.7, 50.19, 56.53), taken = false, model = 1570477186},
+        [1] = {coords = vector4(319.28, -581.11, 44.2, 157.06), taken = false, model = 1631638868},
+        [2] = {coords = vector4(317.83, -585.19, 44.2, 346.18), taken = false, model = 1631638868},
+        [3] = {coords = vector4(314.6, -584.02, 44.2, 339.06), taken = false, model = 1631638868},
+        [4] = {coords = vector4(313.78, -579.14, 44.2, 161.44), taken = false, model = 1631638868},
+        [5] = {coords = vector4(311.19, -582.71, 44.2, 337.53), taken = false, model = 1631638868}, 
+        -- Paleto
+        [6] = {coords = vector4(-252.24, 6323.19, 33.34, 135.86), taken = false, model = 2117668672},
+        [7] = {coords = vector4(-247.21, 6317.83, 33.34, 142.37), taken = false, model = 2117668672},
+        [8] = {coords = vector4(-245.49, 6316.15, 33.34, 136.79), taken = false, model = 2117668672},
+        [9] = {coords = vector4(-252.46, 6312.17, 33.34, 314.1), taken = false, model = 2117668672},
+        [10] = {coords = vector4(-254.14, 6313.98, 33.34, 317.26), taken = false, model = 2117668672},
+        -- Sandy
+        [11] = {coords = vector4(1662.47, 3640.21, 36.34, 32.86), taken = false, model = 1004440924},
+        [12] = {coords = vector4(1666.97, 3642.4, 36.34, 29.6), taken = false, model = 1004440924},
+        [13] = {coords = vector4(1671.62, 3645.16, 36.34, 30.7), taken = false, model = 1004440924},
+        [14] = {coords = vector4(1675.84, 3647.52, 36.34, 31.91), taken = false, model = 1004440924},
+        -- Oceanhospital
+        -- [17] = {coords = vector4(-1875.13, -318.13, 50.19, 55.75), taken = false, model = 1570477186},
+        -- [18] = {coords = vector4(-1878.63, -321.96, 50.19, 236.28), taken = false, model = 1570477186},
+        -- [19] = {coords = vector4(-1875.26, -324.53, 50.19, 233.09), taken = false, model = 1570477186},
+        -- [20] = {coords = vector4(-1872.23, -326.95, 50.19, 237.17), taken = false, model = 1570477186},
+        -- [21] = {coords = vector4(-1868.71, -329.86, 50.19, 232.97), taken = false, model = 1570477186},
+        -- [22] = {coords = vector4(-1865.85, -332.06, 50.19, 238.19), taken = false, model = 1570477186},
+        -- [23] = {coords = vector4(-1862.85, -334.3, 50.19, 241.39), taken = false, model = 1570477186},
+        -- [24] = {coords = vector4(-1868.75, -323.07, 50.19, 58.8), taken = false, model = 1570477186},
+        -- [25] = {coords = vector4(-1871.89, -320.7, 50.19, 56.53), taken = false, model = 1570477186},
     },
     ["jailbeds"] = {
         [1] = {coords = vector4(1761.96, 2597.74, 45.66, 270.14), taken = false, model = 2117668672},
@@ -112,9 +117,10 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [4] = {coords = vector4(1771.85, 2591.85, 45.66, 91.51), taken = false, model = 2117668672},
     },
     ["stations"] = {
-        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)},
-        [2] = {label = Lang:t('info.oc_hospital'), coords = vector4(-1861.29, -348.07, 49.39, 134.37)},
-        [3] = {label = Lang:t('info.pa_hospital'), coords = vector4(-251.43, 6329.25, 32.43, 281.55)},
+        [1] = {label = Lang:t('info.pb_hospital'), coords = vector4(304.27, -600.33, 43.28, 272.249)}, -- Pillbox
+        [2] = {label = Lang:t('info.pb_hospital'), coords = vector4(1675.03, 3661.04, 35.34, 98.83)}, -- Sandy
+        -- [2] = {label = Lang:t('info.oc_hospital'), coords = vector4(-1861.29, -348.07, 49.39, 134.37)}, -- Ocean
+        [3] = {label = Lang:t('info.pa_hospital'), coords = vector4(-251.43, 6329.25, 32.43, 281.55)}, -- Paleto
     }
 }
 
