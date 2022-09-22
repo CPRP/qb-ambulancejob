@@ -40,6 +40,7 @@ Config.Locations = { -- Edit the various interaction points for players or creat
 	    [3] = vector3(-254.54, 6331.78, 32.43), -- Paleto
         [4] = vector3(1674.81, 3666.17, 35.34), -- Sandy
         [5] = vector3(1672.41, 3652.76, 35.34), -- Sandy
+        [6] = vector3(-436.16, -325.81, 34.91), -- Zonah
         -- [4] = vector3(-1851.6, -339.17, 49.44), -- Ocean
         -- [5] = vector3(-1854.15, -333.98, 49.45), -- Ocean
         -- [6] = vector3(-1865.02, -321.18, 49.46), -- Ocean
@@ -49,22 +50,41 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [2] = vector3(-653.73, -87.68, 38.79), -- FireHQ
         [3] = vector3(-255.66, 6330.44, 32.43), -- Paleto
         [4] = vector3(1670.83, 3655.24, 35.34), -- Sandy
+        [5] = vector3(-432.23, -318.81, 34.91), -- Zonah
         -- [4] = vector3(-1832.04, -341.03, 49.47), -- Ocean
     },
     ["vehicle"] = {
-        [1] = vector4(0, 0, 0, 0),
-        [2] = vector4(0, 0, 0, 0),
+        [1] = vector4(1660.04, 3666.2, 35.34, 295.97), -- Sandy
+        [2] = vector4(1658.0, 3669.78, 35.34, 301.24), -- Sandy
+        [3] = vector4(1655.9, 3673.16, 35.34, 301.32), -- Sandy
+        [4] = vector4(-274.61, 6330.72, 32.43, 273.07), -- Paleto
+        [5] = vector4(-277.37, 6327.32, 32.43, 274.3), -- Paleto
+        [6] = vector4(334.17, -573.6, 28.8, 338.51), -- Pillbox
+        [7] = vector4(326.95, -570.93, 28.8, 338.81), -- Pillbox
+        [8] = vector4(211.94, -1650.28, 29.8, 319.69), -- Davis
+        [9] = vector4(208.9, -1647.59, 29.8, 311.9), -- Davis
+        [10] = vector4(205.58, -1645.25, 29.8, 319.42), -- Davis
+        [11] = vector4(1204.9, -1468.44, 34.86, 0.81), -- LaMesa
+        [12] = vector4(1200.71, -1468.69, 34.86, 2.28), -- LaMesa
+        [13] = vector4(1196.74, -1468.68, 34.86, 355.45), -- LaMesa
+        [14] = vector4(-623.9, -106.48, 38.15, 80.34), -- Fire HQ
+        [15] = vector4(-622.68, -98.56, 38.15, 73.69), -- Fire HQ
+        [16] = vector4(-491.98, -336.8, 34.37, 173.0), -- Zonah
     },
     ["helicopter"] = {
         [1] = vector4(351.58, -587.45, 74.16, 160.5), -- Pillbox Rooftop
-        [2] = vector4(1636.95, 3654.74, 35.34, 214.84), -- Sandy
+        [2] = vector4(1637.98, 3653.51, 35.24, 54.25), -- Sandy
+        [3] = vector4(-659.84, -78.45, 48.34, 303.51), -- Fire HQ
+        [4] = vector4(-456.33, -291.36, 78.17, 50.43), -- Zonah
+        [5] = vector4(-447.37, -312.43, 78.17, 22.27), -- Zonah
         -- [2] = vector4(-1867.1, -352.71, 58.03, 140.15), -- Ocean
     },
     ["armory"] = {
         [1] = vector3(306.63, -601.76, 43.28), -- Pillbox
-        [2] = vector3(-623.88, -109.03, 45.5), -- FireHQ
+        [2] = vector3(-623.88, -109.03, 45.5), -- Fire HQ
         [3] = vector3(-255.07, 6326.67, 32.43), -- Paleto
         [4] = vector3(1660.81, 3660.0, 35.34), -- Sandy
+        [5] = vector3(-457.15, -309.71, 34.91), -- Zonah
         -- [4] = vector3(-1834.8, -340.76, 49.46), -- Ocean
     },
     ["roof"] = {
@@ -78,17 +98,18 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [2] = vector3(-629.2, -85.22, 45.41), -- FireHQ
         [3] = vector3(-256.2, 6327.75, 32.43), -- Paleto
         [4] = vector3(1660.36, 3657.36, 35.34), -- Sandy
+        [5] = vector3(-438.4, -319.02, 34.91), -- Zonah
         -- [4] = vector3(-1814.93, -359.88, 49.46), -- Ocean
         -- [5] = vector3(-1813.89, -358.39, 49.46), -- Ocean
     },
     ["beds"] = {
-	-- Pillbox
+	    -- Pillbox
         [1] = {coords = vector4(319.28, -581.11, 44.2, 157.06), taken = false, model = 1631638868},
         [2] = {coords = vector4(317.83, -585.19, 44.2, 346.18), taken = false, model = 1631638868},
         [3] = {coords = vector4(314.6, -584.02, 44.2, 339.06), taken = false, model = 1631638868},
         [4] = {coords = vector4(313.78, -579.14, 44.2, 161.44), taken = false, model = 1631638868},
         [5] = {coords = vector4(311.19, -582.71, 44.2, 337.53), taken = false, model = 1631638868}, 
-        -- Paleto
+        --- Paleto
         [6] = {coords = vector4(-252.24, 6323.19, 33.34, 135.86), taken = false, model = 2117668672},
         [7] = {coords = vector4(-247.21, 6317.83, 33.34, 142.37), taken = false, model = 2117668672},
         [8] = {coords = vector4(-245.49, 6316.15, 33.34, 136.79), taken = false, model = 2117668672},
@@ -99,6 +120,13 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [12] = {coords = vector4(1666.97, 3642.4, 36.34, 29.6), taken = false, model = 1004440924},
         [13] = {coords = vector4(1671.62, 3645.16, 36.34, 30.7), taken = false, model = 1004440924},
         [14] = {coords = vector4(1675.84, 3647.52, 36.34, 31.91), taken = false, model = 1004440924},
+        -- Mount Zonah
+        [15] = {coords = vector4(-455.28, -278.22, 35.84, 203.25), taken = false, model = 2117668672},
+        [16] = {coords = vector4(-451.53, -285.03, 35.83, 25.93), taken = false, model = 2117668672},
+        [17] = {coords = vector4(-454.94, -286.29, 35.83, 31.75), taken = false, model = 2117668672},
+        [18] = {coords = vector4(-460.34, -288.48, 35.83, 29.23), taken = false, model = 2117668672},
+        [19] = {coords = vector4(-466.42, -282.91, 35.84, 201.77), taken = false, model = 2117668672},
+        [20] = {coords = vector4(-462.96, -281.33, 35.84, 197.74), taken = false, model = 2117668672},
         -- Oceanhospital
         -- [17] = {coords = vector4(-1875.13, -318.13, 50.19, 55.75), taken = false, model = 1570477186},
         -- [18] = {coords = vector4(-1878.63, -321.96, 50.19, 236.28), taken = false, model = 1570477186},
@@ -121,49 +149,104 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [2] = {label = Lang:t('info.pb_hospital'), coords = vector4(1675.03, 3661.04, 35.34, 98.83)}, -- Sandy
         -- [2] = {label = Lang:t('info.oc_hospital'), coords = vector4(-1861.29, -348.07, 49.39, 134.37)}, -- Ocean
         [3] = {label = Lang:t('info.pa_hospital'), coords = vector4(-251.43, 6329.25, 32.43, 281.55)}, -- Paleto
+        [4] = {label = Lang:t('info.pa_hospital'), coords = vector4(-445.97, -341.17, 34.5, 248.65)}, -- Zonah
     }
 }
 
 Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulance job grade level
 	-- Grade 0
-	[0] = {
-		["ambulance"] = "Ambulance",
-        ["f550ambo"] = "Ford F250 Ambulance",
+	[0] = { --Probationary
+		--
 	},
 	-- Grade 1
-	[1] = {
-		["ambulance"] = "Ambulance",
-        ["flyhoe"] = "Chevy Tahoe",
-        ["f550ambo"] = "Ford F250 Ambulance",
-        ["firetruck"] = "Firetruck",
+	[1] = { --Firefighter
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["20ramambo"] = "2020 Ford Ambulance",
 	},
 	-- Grade 2
-	[2] = {
-		["ambulance"] = "Ambulance",
-        ["flyhoe"] = "Chevy Tahoe",
-        ["fsilv"] = "Chevy Silverado",
-        ["f550ambo"] = "Ford F250 Ambulance",
-        ["firetruck"] = "Firetruck",
+	[2] = { --Engineer
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["arrowladder"] = "Ladder Truck (R&B)",
+        ["arrowrescue"] = "Tactical Rescue (R&B)",
+        ["20ramambo"] = "2020 Ford Ambulance",
 	},
 	-- Grade 3
-	[3] = {
-		["ambulance"] = "Ambulance",
-        ["flyhoe"] = "Chevy Tahoe",
-        ["FD2"] = "Dodge Charger",
-        ["fsilv"] = "Chevy Silverado",
-        ["f550ambo"] = "Ford F250 Ambulance",
-        ["firetruck"] = "Firetruck",
+	[3] = { --Lieutenant
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["arrowladder"] = "Ladder Truck (R&B)",
+        ["fdatv"] = "ATV",
+        ["fd6"] = "Ford F150",
+        ["arrowrescue"] = "Tactical Rescue (R&B)",
+        ["20ramambo"] = "2020 Ford Ambulance",
 	},
 	-- Grade 4
-	[4] = {
-		["ambulance"] = "Ambulance",
-        ["flyhoe"] = "Chevy Tahoe",
-        ["spartan"] = "Big Bertha",
-        ["FD2"] = "Dodge Charger",
-        ["fsilv"] = "Chevy Silverado",
-        ["f550ambo"] = "Ford F250 Ambulance",
-        ["firetruck"] = "Firetruck",
-	}
+	[4] = { --Captain
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["arrowladder"] = "Ladder Truck (R&B)",
+        ["fdatv"] = "ATV",
+        ["FD8"] = "Ford Explorer",
+        ["fd6"] = "Ford F150",
+        ["arrowrescue"] = "Tactical Rescue (R&B)",
+        ["20ramambo"] = "2020 Ford Ambulance",
+	},
+    -- Grade 5
+    [5] = { --Battalion Chief
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["arrowladder"] = "Ladder Truck (R&B)",
+        ["fdatv"] = "ATV",
+        ["FD8"] = "Ford Explorer",
+        ["fd6"] = "Ford F150",
+        ["fd13"] = "Chevy Tahoe",
+        ["arrowrescue"] = "Tactical Rescue (R&B)",
+        ["20ramambo"] = "2020 Ford Ambulance",
+    },
+    -- Grade 6
+    [6] = { --Assistant Chief
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["arrowladder"] = "Ladder Truck (R&B)",
+        ["fdatv"] = "ATV",
+        ["FD8"] = "Ford Explorer",
+        ["fd6"] = "Ford F150",
+        ["fd13"] = "Chevy Tahoe",
+        ["21firedurango"] = "Dodge Durango",
+        ["fdfmo1"] = "Investigator Unit",
+        ["arrowrescue"] = "Tactical Rescue (R&B)",
+        ["20ramambo"] = "2020 Ford Ambulance",
+    },
+    -- Grade 7
+    [7] = { --Chief
+		["fd2"] = "Ambulance",
+        ["fordambo"] = "Ford Ambulance",
+        ["arroweng"] = "Fire Engine (R&B)",
+        ["fd1"] = "Fire Engine",
+        ["arrowladder"] = "Ladder Truck (R&B)",
+        ["fdatv"] = "ATV",
+        ["FD8"] = "Ford Explorer",
+        ["fd6"] = "Ford F150",
+        ["fd13"] = "Chevy Tahoe",
+        ["21firedurango"] = "Dodge Durango",
+        ["fdfmo1"] = "Investigator Unit",
+        ["arrowrescue"] = "Tactical Rescue (R&B)",
+        ["20ramambo"] = "2020 Ford Ambulance",
+    }
 }
 
 Config.Items = { -- Items found in the ambulance shop for players with the ambulance job to purchase
@@ -224,7 +307,7 @@ Config.Items = { -- Items found in the ambulance shop for players with the ambul
             amount = 10,
             info = {},
             type = "item",
-            slot = 6,
+            slot = 7,
         },
         [8] = {
             name = "ifaks",
@@ -232,7 +315,7 @@ Config.Items = { -- Items found in the ambulance shop for players with the ambul
             amount = 50,
             info = {},
             type = "item",
-            slot = 7,
+            slot = 8,
         },
         [9] = {
             name = "weapon_hatchet",
@@ -240,7 +323,23 @@ Config.Items = { -- Items found in the ambulance shop for players with the ambul
             amount = 1,
             info = {},
             type = "item",
-            slot = 8,
+            slot = 9,
+        },
+        [10] = {
+            name = "harness",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 10,
+        },
+        [11] = {
+            name = "tunerlaptop",
+            price = 0,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 11,
         },
     }
 }
