@@ -787,7 +787,7 @@ end)
 -- end)
 
 CreateThread(function()
-    dimeBlip = AddBlipForCoord(859.49, -2364.07, 30.35)
+    dimeBlip = AddBlipForCoord(952.7775, -1700.9637, 29.7632)
     SetBlipSprite(dimeBlip, 523)
     SetBlipScale(dimeBlip, 0.8)
     SetBlipDisplay(dimeBlip, 4)
@@ -798,17 +798,17 @@ CreateThread(function()
     EndTextCommandSetBlipName(dimeBlip)
 end)
 
-CreateThread(function()
-    bobcatBlip = AddBlipForCoord(919.2, -2122.193, 30.49)
-    SetBlipSprite(bobcatBlip, 616)
-    SetBlipScale(bobcatBlip, 0.8)
-    SetBlipDisplay(bobcatBlip, 4)
-    SetBlipColour(bobcatBlip, 5)
-    SetBlipAsShortRange(bobcatBlip, true)
-    BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName("Bobcat Security")
-    EndTextCommandSetBlipName(bobcatBlip)
-end)
+-- CreateThread(function()
+--     bobcatBlip = AddBlipForCoord(919.2, -2122.193, 30.49)
+--     SetBlipSprite(bobcatBlip, 616)
+--     SetBlipScale(bobcatBlip, 0.8)
+--     SetBlipDisplay(bobcatBlip, 4)
+--     SetBlipColour(bobcatBlip, 5)
+--     SetBlipAsShortRange(bobcatBlip, true)
+--     BeginTextCommandSetBlipName("STRING")
+--     AddTextComponentSubstringPlayerName("Bobcat Security")
+--     EndTextCommandSetBlipName(bobcatBlip)
+-- end)
 
 -- CreateThread(function()
 --     townhallBlip = AddBlipForCoord(-545.37, -203.66, 38.22)
@@ -834,17 +834,17 @@ end)
 --     EndTextCommandSetBlipName(ottosBlip)
 -- end)
 
-CreateThread(function()
-    carclubBlip = AddBlipForCoord(952.7775, -1700.9637, 29.7632)
-    SetBlipSprite(carclubBlip, 523)
-    SetBlipScale(carclubBlip, 0.8)
-    SetBlipDisplay(carclubBlip, 4)
-    SetBlipColour(carclubBlip, 50)
-    SetBlipAsShortRange(carclubBlip, true)
-    BeginTextCommandSetBlipName("STRING")
-    AddTextComponentSubstringPlayerName("Car Club")
-    EndTextCommandSetBlipName(carclubBlip)
-end)
+-- CreateThread(function()
+--     carclubBlip = AddBlipForCoord(952.7775, -1700.9637, 29.7632)
+--     SetBlipSprite(carclubBlip, 523)
+--     SetBlipScale(carclubBlip, 0.8)
+--     SetBlipDisplay(carclubBlip, 4)
+--     SetBlipColour(carclubBlip, 50)
+--     SetBlipAsShortRange(carclubBlip, true)
+--     BeginTextCommandSetBlipName("STRING")
+--     AddTextComponentSubstringPlayerName("Car Club")
+--     EndTextCommandSetBlipName(carclubBlip)
+-- end)
 
 CreateThread(function()
     recordaBlip = AddBlipForCoord(473.96, -104.62, 63.16)
@@ -1228,11 +1228,22 @@ else
                 maxZ = v.coords.z + 1,
             })
             local bedCombo = ComboZone:Create(bedPoly, {name = "bedCombo", debugPoly = false})
+            -- bedCombo:onPlayerInOut(function(isPointInside)
+            --     if isPointInside then
+            --         exports['qb-core']:DrawText(Lang:t('text.lie_bed'), 'left')
+            --         CheckInControls("beds")
+            --     else
+            --         listen = false
+            --         exports['qb-core']:HideText()
+            --     end
+            -- end)
             bedCombo:onPlayerInOut(function(isPointInside)
-                if isPointInside then
+                if isPointInside and not isInHospitalBed then
+                    inBed = true
                     exports['qb-core']:DrawText(Lang:t('text.lie_bed'), 'left')
                     CheckInControls("beds")
                 else
+                    inBed = false
                     listen = false
                     exports['qb-core']:HideText()
                 end
