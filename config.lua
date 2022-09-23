@@ -161,6 +161,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
 	-- Grade 1
 	[1] = { --Firefighter
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
@@ -169,6 +170,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
 	-- Grade 2
 	[2] = { --Engineer
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
@@ -179,6 +181,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
 	-- Grade 3
 	[3] = { --Lieutenant
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
@@ -191,6 +194,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
 	-- Grade 4
 	[4] = { --Captain
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
@@ -204,6 +208,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
     -- Grade 5
     [5] = { --Battalion Chief
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
@@ -218,6 +223,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
     -- Grade 6
     [6] = { --Assistant Chief
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
@@ -234,6 +240,7 @@ Config.AuthorizedVehicles = { -- Vehicles players can use based on their ambulan
     -- Grade 7
     [7] = { --Chief
 		["fd2"] = "Ambulance",
+        ["stretcher"] = "Stretcher",
         ["fordambo"] = "Ford Ambulance",
         ["arroweng"] = "Fire Engine (R&B)",
         ["fd1"] = "Fire Engine",
