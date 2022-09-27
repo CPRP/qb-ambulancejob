@@ -703,23 +703,103 @@ Config.Weapons = { -- Correspond weapon names to their class number
 }
 
 Config.VehicleSettings = { -- Enable or disable vehicle extras when pulling them from the ambulance job vehicle spawner
-    ["car1"] = { -- Model name
+    ["fd2"] = { -- Model name
         ["extras"] = {
-            ["1"] = false, -- on/off
+            ["1"] = true, -- on/off
             ["2"] = true,
-            ["3"] = true,
-            ["4"] = true,
+            ["3"] = false,
+            ["4"] = false,
             ["5"] = true,
             ["6"] = true,
             ["7"] = true,
             ["8"] = true,
             ["9"] = true,
-            ["10"] = true,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = true,
+        }
+    },
+    ["fordambo"] = {
+        ["extras"] = {
+            ["1"] = true,
+            ["2"] = true,
+            ["3"] = true,
+            ["4"] = false,
+            ["5"] = true,
+            ["6"] = true,
+            ["7"] = true,
+            ["8"] = true,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
+        }
+    },
+    ["arroweng"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = false,
+            ["3"] = false,
+            ["4"] = false,
+            ["5"] = false,
+            ["6"] = false,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
             ["11"] = true,
             ["12"] = true,
         }
     },
-    ["car2"] = {
+    ["fd1"] = {
+        ["extras"] = {
+            ["1"] = true,
+            ["2"] = true,
+            ["3"] = true,
+            ["4"] = true,
+            ["5"] = false,
+            ["6"] = true,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
+        }
+    },
+    ["arrowladder"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = false,
+            ["3"] = false,
+            ["4"] = true,
+            ["5"] = true,
+            ["6"] = false,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
+        }
+    },
+    ["fdatv"] = {
+        ["extras"] = {
+            ["1"] = true,
+            ["2"] = true,
+            ["3"] = false,
+            ["4"] = false,
+            ["5"] = false,
+            ["6"] = false,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
+        }
+    },
+    ["FD8"] = {
         ["extras"] = {
             ["1"] = false,
             ["2"] = true,
@@ -733,6 +813,102 @@ Config.VehicleSettings = { -- Enable or disable vehicle extras when pulling them
             ["10"] = true,
             ["11"] = true,
             ["12"] = true,
+        }
+    },
+    ["fd6"] = {
+        ["extras"] = {
+            ["1"] = true,
+            ["2"] = false,
+            ["3"] = true,
+            ["4"] = false,
+            ["5"] = false,
+            ["6"] = false,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = true,
+            ["10"] = false,
+            ["11"] = true,
+            ["12"] = false,
+        }
+    },
+    ["fd13"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = true,
+            ["3"] = false,
+            ["4"] = false,
+            ["5"] = false,
+            ["6"] = false,
+            ["7"] = true,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
+        }
+    },
+    ["21firedurango"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = true,
+            ["3"] = true,
+            ["4"] = true,
+            ["5"] = true,
+            ["6"] = true,
+            ["7"] = true,
+            ["8"] = true,
+            ["9"] = true,
+            ["10"] = true,
+            ["11"] = true,
+            ["12"] = true,
+        }
+    },
+    ["fdfmo1"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = false,
+            ["3"] = false,
+            ["4"] = false,
+            ["5"] = false,
+            ["6"] = false,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
+        }
+    },
+    ["arrowrescue"] = {
+        ["extras"] = {
+            ["1"] = false,
+            ["2"] = false,
+            ["3"] = false,
+            ["4"] = false,
+            ["5"] = false,
+            ["6"] = false,
+            ["7"] = false,
+            ["8"] = false,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = true,
+            ["12"] = true,
+        }
+    },
+    ["20ramambo"] = {
+        ["extras"] = {
+            ["1"] = true,
+            ["2"] = true,
+            ["3"] = true,
+            ["4"] = false,
+            ["5"] = true,
+            ["6"] = true,
+            ["7"] = true,
+            ["8"] = true,
+            ["9"] = false,
+            ["10"] = false,
+            ["11"] = false,
+            ["12"] = false,
         }
     }
 }
