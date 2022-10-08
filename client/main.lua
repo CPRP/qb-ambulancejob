@@ -1002,7 +1002,18 @@ CreateThread(function()
     EndTextCommandSetBlipName(gruppeBlip)
 end)
 
-local check = false --[[ADDED FOR MAKE FIRST PERSON SHOOTING IN VEHICLES]]
+Citizen.CreateThread(function() --[[ADDED TO STOP AIM ASSIST FOR CONTROLLER]]
+    while true do
+        Citizen.Wait(0)
+        if currentWeaponHash ~= -1569615261 then
+            SetPlayerLockon(PlayerId(), false)
+        else
+            SetPlayerLockon(PlayerId(), true)
+        end
+    end
+end)
+
+local check = false --[[ADDED TO MAKE FIRST PERSON SHOOTING IN VEHICLES]]
 CreateThread(function()
     while true do
         Wait(1)
