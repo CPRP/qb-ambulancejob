@@ -1002,6 +1002,18 @@ end)
 --     EndTextCommandSetBlipName(gruppeBlip)
 -- end)
 
+CreateThread(function()
+    mbaBlib = AddBlipForCoord(-327.19, -1962.32, 21.6)
+    SetBlipSprite(mbaBlib, 546)
+    SetBlipScale(mbaBlib, 0.8)
+    SetBlipDisplay(mbaBlib, 4)
+    SetBlipColour(mbaBlib, 46)
+    SetBlipAsShortRange(mbaBlib, true)
+    BeginTextCommandSetBlipName("STRING")
+    AddTextComponentSubstringPlayerName("Maze Bank Arena")
+    EndTextCommandSetBlipName(mbaBlib)
+end)
+
 -- Citizen.CreateThread(function() --[[ADDED TO STOP AIM ASSIST FOR CONTROLLER]]
 --     while true do
 --         Citizen.Wait(0)
