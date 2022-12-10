@@ -52,6 +52,8 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [4] = vector3(1670.83, 3655.24, 35.34), -- Sandy
         [5] = vector3(-432.23, -318.81, 34.91), -- Zonah
         -- [4] = vector3(-1832.04, -341.03, 49.47), -- Ocean
+        [6] = vector3(-385.35, 6104.51, 31.38), -- Paleto FD
+        [7] = vector3(1173.17, -1474.67, 34.69), -- La Mesa FD
     },
     ["vehicle"] = {
         [1] = vector4(1660.04, 3666.2, 35.34, 295.97), -- Sandy
@@ -85,6 +87,8 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [3] = vector3(-255.07, 6326.67, 32.43), -- Paleto
         [4] = vector3(1660.81, 3660.0, 35.34), -- Sandy
         [5] = vector3(-457.15, -309.71, 34.91), -- Zonah
+        [6] = vector3(-382.16, 6112.53, 31.38), -- Paleto FD
+        [7] = vector3(1196.26, -1485.34, 34.69), -- La Mesa FD
         -- [4] = vector3(-1834.8, -340.76, 49.46), -- Ocean
     },
     ["roof"] = {
@@ -99,6 +103,8 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         [3] = vector3(-256.2, 6327.75, 32.43), -- Paleto
         [4] = vector3(1660.36, 3657.36, 35.34), -- Sandy
         [5] = vector3(-438.4, -319.02, 34.91), -- Zonah
+        [6] = vector3(-358.53, 6119.89, 38.44), -- Paleto FD
+        [7] = vector3(1211.08, -1487.88, 34.69), -- La Mesa FD
         -- [4] = vector3(-1814.93, -359.88, 49.46), -- Ocean
         -- [5] = vector3(-1813.89, -358.39, 49.46), -- Ocean
     },
