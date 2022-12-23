@@ -35,9 +35,9 @@ Config.AlertShowInfo = 2 -- How many injuries a player must have before being al
 
 Config.Locations = { -- Edit the various interaction points for players or create new ones
     ["checking"] = {
-	    [1] = vector3(309.09, -592.51, 43.28), -- PillboxTop
+	[1] = vector3(309.09, -592.51, 43.28), -- PillboxTop
         [2] = vector3(350.85, -588.11, 28.8), -- PillboxBotom
-	    [3] = vector3(-254.54, 6331.78, 32.43), -- Paleto
+	[3] = vector3(-254.54, 6331.78, 32.43), -- Paleto
         [4] = vector3(1674.81, 3666.17, 35.34), -- Sandy
         [5] = vector3(1672.41, 3652.76, 35.34), -- Sandy
         [6] = vector3(-436.16, -325.81, 34.91), -- Zonah
@@ -46,14 +46,14 @@ Config.Locations = { -- Edit the various interaction points for players or creat
         -- [6] = vector3(-1865.02, -321.18, 49.46), -- Ocean
     },
     ["duty"] = {
-        [1] = vector3(310.63, -597.06, 43.28), -- Pillbox
-        [2] = vector3(-653.73, -87.68, 38.79), -- FireHQ
-        [3] = vector3(-255.66, 6330.44, 32.43), -- Paleto
-        [4] = vector3(1670.83, 3655.24, 35.34), -- Sandy
-        [5] = vector3(-432.23, -318.81, 34.91), -- Zonah
+        -- [1] = vector3(310.63, -597.06, 43.28), -- Pillbox
+        [1] = vector3(-653.73, -87.68, 38.79), -- FireHQ
+        [2] = vector3(-255.66, 6330.44, 32.43), -- Paleto
+        [3] = vector3(1670.83, 3655.24, 35.34), -- Sandy
+        [4] = vector3(-432.23, -318.81, 34.91), -- Zonah
         -- [4] = vector3(-1832.04, -341.03, 49.47), -- Ocean
-        [6] = vector3(-385.35, 6104.51, 31.38), -- Paleto FD
-        [7] = vector3(1173.17, -1474.67, 34.69), -- La Mesa FD
+        [5] = vector3(-385.35, 6104.51, 31.38), -- Paleto FD
+        [6] = vector3(1173.17, -1474.67, 34.69), -- La Mesa FD
     },
     ["vehicle"] = {
         [1] = vector4(1660.04, 3666.2, 35.34, 295.97), -- Sandy
