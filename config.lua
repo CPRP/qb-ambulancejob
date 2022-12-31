@@ -689,23 +689,30 @@ Config.Weapons = { -- Correspond weapon names to their class number
     [`WEAPON_MK14`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_M110`] = Config.WeaponClasses['HIGH_CALIBER'],
     [`WEAPON_HUNTINGRIFLE`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_AKS74`] = Config.WeaponClasses['HIGH_CALIBER'],
+    [`WEAPON_AK74`] = Config.WeaponClasses['HIGH_CALIBER'],
     --[[ MEDIUM CALIBER ]]
     [`WEAPON_UZI`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_MAC10`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     [`WEAPON_MP9`] = Config.WeaponClasses['MEDIUM_CALIBER'],
+    [`WEAPON_MP5`] = Config.WeaponClasses['MEDIUM_CALIBER'],
     --[[ SMALL CALIBER ]]
     [`WEAPON_GLOCK17`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M9`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_M1911`] = Config.WeaponClasses['SMALL_CALIBER'],
     [`WEAPON_FNX45`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_GLOCK22`] = Config.WeaponClasses['SMALL_CALIBER'],
+    [`WEAPON_GLOCK18C`] = Config.WeaponClasses['SMALL_CALIBER'],
     --[[ SHOTGUN ]]
     [`WEAPON_REMINGTON`] = Config.WeaponClasses['SHOTGUN'],
     [`WEAPON_MOSSBERG`] = Config.WeaponClasses['SHOTGUN'],
     --[[ CUTTING ]]
     [`WEAPON_SHIV`] = Config.WeaponClasses['CUTTING'],
     [`WEAPON_KATANA`] = Config.WeaponClasses['CUTTING'],
+    [`WEAPON_KARAMBIT`] = Config.WeaponClasses['CUTTING'],
     --[[ HEAVY IMPACT ]]
     [`WEAPON_SLEDGEHAMMER`] = Config.WeaponClasses['HEAVY_IMPACT'],
+    [`WEAPON_COLBATON`] = Config.WeaponClasses['HEAVY_IMPACT'],
 }
 
 Config.VehicleSettings = { -- Enable or disable vehicle extras when pulling them from the ambulance job vehicle spawner
