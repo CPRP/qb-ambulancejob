@@ -712,6 +712,17 @@ end)
 
 -- Threads
 
+-- NO LOOP -- FOR STOPPING PROPS STUCK IN HAND FROM CREATING A TORNADO --
+RegisterNetEvent("baseevents:enteringVehicle", function()
+    for k, v in pairs(GetGamePool('CObject')) do
+        if IsEntityAttachedToEntity(PlayerPedId(), v) then
+            SetEntityAsMissionEntity(v, true, true)
+            DeleteObject(v)
+            DeleteEntity(v)
+        end
+    end
+end)
+
 CreateThread(function()
     for _, station in pairs(Config.Locations["stations"]) do
         local blip = AddBlipForCoord(station.coords.x, station.coords.y, station.coords.z)
