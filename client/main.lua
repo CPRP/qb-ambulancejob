@@ -712,13 +712,12 @@ end)
 
 -- Threads
 
--- NO LOOP -- FOR STOPPING PROPS STUCK IN HAND FROM CREATING A TORNADO --
-RegisterNetEvent("baseevents:enteringVehicle", function()
-    for k, v in pairs(GetGamePool('CObject')) do
-        if IsEntityAttachedToEntity(PlayerPedId(), v) then
-            SetEntityAsMissionEntity(v, true, true)
-            DeleteObject(v)
-            DeleteEntity(v)
+-- DISABLES COMBAT ROLLING
+CreateThread(function()
+    while true do
+        Wait(0)
+        if IsPedArmed(PlayerPedId(), 4 | 2) and IsControlPressed(0, 25) then
+            DisableControlAction(0, 22, true)
         end
     end
 end)
