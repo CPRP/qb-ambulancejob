@@ -567,6 +567,7 @@ RegisterNetEvent('hospital:client:Revive', function()
     local player = PlayerPedId()
 
     if isDead or InLaststand then
+        exports['pma-voice']:resetProximityCheck() -- This disables the player from "targeting" anyone when talking
         local pos = GetEntityCoords(player, true)
         NetworkResurrectLocalPlayer(pos.x, pos.y, pos.z, GetEntityHeading(player), true, false)
         isDead = false
