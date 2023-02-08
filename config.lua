@@ -110,11 +110,11 @@ Config.Locations = { -- Edit the various interaction points for players or creat
     },
     ["beds"] = {
 	    -- Pillbox
-        [1] = {coords = vector4(319.28, -581.11, 44.2, 157.06), taken = false, model = 1631638868},
-        [2] = {coords = vector4(317.83, -585.19, 44.2, 346.18), taken = false, model = 1631638868},
-        [3] = {coords = vector4(314.6, -584.02, 44.2, 339.06), taken = false, model = 1631638868},
-        [4] = {coords = vector4(313.78, -579.14, 44.2, 161.44), taken = false, model = 1631638868},
-        [5] = {coords = vector4(311.19, -582.71, 44.2, 337.53), taken = false, model = 1631638868}, 
+        -- [1] = {coords = vector4(319.28, -581.11, 44.2, 157.06), taken = false, model = 1631638868},
+        -- [2] = {coords = vector4(317.83, -585.19, 44.2, 346.18), taken = false, model = 1631638868},
+        -- [3] = {coords = vector4(314.6, -584.02, 44.2, 339.06), taken = false, model = 1631638868},
+        -- [4] = {coords = vector4(313.78, -579.14, 44.2, 161.44), taken = false, model = 1631638868},
+        -- [5] = {coords = vector4(311.19, -582.71, 44.2, 337.53), taken = false, model = 1631638868}, 
         --- Paleto
         [6] = {coords = vector4(-252.24, 6323.19, 33.34, 135.86), taken = false, model = 2117668672},
         [7] = {coords = vector4(-247.21, 6317.83, 33.34, 142.37), taken = false, model = 2117668672},
