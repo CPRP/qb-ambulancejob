@@ -18,15 +18,33 @@ AddEventHandler('txAdmin:events:healedPlayer', function(eventData)
 	TriggerClientEvent("hospital:client:HealInjuries", eventData.id, "full")
 end)
 
-RegisterNetEvent('hospital:server:SendToBed', function(bedId, isRevive)
+-- RegisterNetEvent('hospital:server:SendToBed', function(bedId, isRevive)
+-- 	local src = source
+-- 	local Player = QBCore.Functions.GetPlayer(src)
+-- 	TriggerClientEvent('hospital:client:SendToBed', src, bedId, Config.Locations["beds"][bedId], isRevive)
+-- 	TriggerClientEvent('hospital:client:SetBed', -1, bedId, true)
+-- 	Player.Functions.RemoveMoney("bank", Config.BillCost , "respawned-at-hospital")
+-- 		exports['qb-management']:AddMoney("ambulance", Config.BillCost)
+-- 	TriggerClientEvent('hospital:client:SendBillEmail', src, Config.BillCost)
+-- end)
+
+RegisterNetEvent('hospital:server:SendToBed', function(bedId, isRevive) -- ADDED EVENT FOR M-INSURANCE
 	local src = source
 	local Player = QBCore.Functions.GetPlayer(src)
+	local citizenid = Player.PlayerData.citizenid -- Added this
+
 	TriggerClientEvent('hospital:client:SendToBed', src, bedId, Config.Locations["beds"][bedId], isRevive)
 	TriggerClientEvent('hospital:client:SetBed', -1, bedId, true)
-	Player.Functions.RemoveMoney("bank", Config.BillCost , "respawned-at-hospital")
-		exports['qb-management']:AddMoney("ambulance", Config.BillCost)
-	TriggerClientEvent('hospital:client:SendBillEmail', src, Config.BillCost)
-end)
+
+  if exports['m-Insurance']:haveHealthInsurance(citizenid) then -- Added this
+	  Player.Functions.RemoveMoney("bank", Config.BillCost - 500, "respawned-at-hospital") -- You can change the 500 for the discount do you want
+	  exports['qb-management']:AddMoney("ambulance", Config.BillCost - 500)
+  else
+	  Player.Functions.RemoveMoney("bank", Config.BillCost , "respawned-at-hospital")
+	  exports['qb-management']:AddMoney("ambulance", Config.BillCost)
+  end
+	  TriggerClientEvent('hospital:client:SendBillEmail', src, Config.BillCost)
+  end)
 
 RegisterNetEvent('hospital:server:RespawnAtHospital', function()
 	local src = source
