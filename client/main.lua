@@ -1036,12 +1036,21 @@ CreateThread(function()
     end
 end)
 
+-- CreateThread(function() -- TRAIN SPAWNS / SPAWN TRAINS
+--     SwitchTrainTrack(0, true)
+--     SwitchTrainTrack(3, true)
+--     N_0x21973bbf8d17edfa(0, 120000)
+--     SetRandomTrains(true)
+-- end)
+
 CreateThread(function() -- TRAIN SPAWNS / SPAWN TRAINS
     SwitchTrainTrack(0, true)
     SwitchTrainTrack(3, true)
-    N_0x21973bbf8d17edfa(0, 120000)
-    SetRandomTrains(true)
-end)
+    SetTrainTrackSpawnFrequency(0, 2 * 60 * 1000) -- 2 minutes in milliseconds
+    SetRandomTrains(1)
+      -- turn off/On doors opening
+      SetTrainsForceDoorsOpen(false)
+  end)
 
 local listen = false
  local function CheckInControls(variable)
