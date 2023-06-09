@@ -266,3 +266,44 @@ CreateThread(function()
         end
     end
 end)
+
+local function HealOxy() -- ADDED FOR PUG BATTLEROYAL SCRIPT
+    if not healing then
+        healing = true
+    else
+        return
+    end
+    isBleeding = 0
+    local count = 7
+    while count > 0 do
+        Wait(2000)
+        count = count - 1
+        SetEntityHealth(PlayerPedId(), GetEntityHealth(PlayerPedId()) + 10) 
+    end
+    healing = false
+end
+
+RegisterNetEvent('consumables:client:oxy') -- ADDED FOR PUG BATTLEROYAL SCRIPT
+AddEventHandler('consumables:client:oxy', function()
+    local playerPed = PlayerPedId()
+    QBCore.Functions.Progressbar("use_oxy", "Healing", 2000, false, true, {
+        disableMovement = false,
+        disableCarMovement = false,
+		disableMouse = false,
+		disableCombat = true,
+    }, {
+		animDict = "mp_suicide",
+		anim = "pill",
+		flags = 49,
+    }, {}, {}, function() -- Done
+        StopAnimTask(playerPed, "mp_suicide", "pill", 1.0)
+        TriggerServerEvent("QBCore:Server:RemoveItem", "oxy", 1)
+        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["oxy"], "remove")
+        ClearPedBloodDamage(playerPed)
+        -- RemoveBleed(1)
+		HealOxy()
+    end, function() -- Cancel
+        StopAnimTask(playerPed, "mp_suicide", "pill", 1.0)
+        QBCore.Functions.Notify("Canceled", "error")
+    end)
+end)
